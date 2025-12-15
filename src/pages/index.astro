@@ -75,28 +75,44 @@ import { SITE_TITLE, SITE_DESCRIPTION, COMPANY_TAGLINE, COMPANY_DESCRIPTION } fr
 	<section class="section" id="how-it-works">
 		<h2>Reimagining Connectivity</h2>
 		<div class="how-it-works-visual">
-			<!-- Placeholder for mesh network visualization -->
 			<div class="mesh-visualization">
-				<div class="visualization-image">
-					<img src="/images/mesh-concept.png" alt="Mesh Network Concept" />
-					<div class="concept-badge">Conceptual Visualization</div>
-				</div>
+				<img src="/images/mesh-network-diagram.svg" alt="Mesh Network Concept - Devices communicate peer-to-peer" />
 			</div>
 		</div>
 		
 		<div class="steps-grid">
 			<div class="step-item">
-				<div class="step-icon"><!-- Icon: Radar scanning symbol --></div>
+				<div class="step-icon">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="24" cy="24" r="6" fill="currentColor"/>
+						<circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+						<circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+					</svg>
+				</div>
 				<h3>Device Discovery</h3>
 				<p>When you run our app, your phone automatically discovers other nearby devices running the same technology.</p>
 			</div>
 			<div class="step-item">
-				<div class="step-icon"><!-- Icon: Multiple route paths --></div>
+				<div class="step-icon">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8 24 L18 14 L28 24 L38 14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+						<path d="M8 34 L18 24 L28 34 L38 24" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+						<circle cx="8" cy="24" r="3" fill="currentColor"/>
+						<circle cx="38" cy="14" r="3" fill="currentColor"/>
+					</svg>
+				</div>
 				<h3>Intelligent Routing</h3>
 				<p>Messages are securely passed from device to device along optimized paths, extending far beyond your direct range.</p>
 			</div>
 			<div class="step-item">
-				<div class="step-icon"><!-- Icon: Message with checkmark --></div>
+				<div class="step-icon">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2.5"/>
+						<path d="M8 18 L24 28 L40 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+						<path d="M32 28 L38 34" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+						<path d="M38 28 L32 34" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+					</svg>
+				</div>
 				<h3>Resilient Delivery</h3>
 				<p>Our technology ensures messages reach their destination, even when connections are intermittent or network conditions change.</p>
 			</div>
@@ -167,17 +183,17 @@ import { SITE_TITLE, SITE_DESCRIPTION, COMPANY_TAGLINE, COMPANY_DESCRIPTION } fr
 		<p>We're looking for partners, advisors, and early adopters who share our vision for resilient communication technology. Here's how you can get involved:</p>
 		
 		<div class="involvement-options">
-			<div class="option-item">
-				<strong>Investment Opportunities:</strong> Help accelerate our development timeline
+			<div class="option-item investment-highlight">
+				<strong>💰 Investment Opportunities:</strong> Help accelerate our development timeline
 			</div>
 			<div class="option-item">
-				<strong>Technical Collaboration:</strong> Contribute expertise in BLE, networking, or mobile development
+				<strong>🤝 Technical Collaboration:</strong> Contribute expertise in BLE, networking, or mobile development
 			</div>
 			<div class="option-item">
-				<strong>Beta Testing:</strong> Sign up to be among the first to test our technology
+				<strong>🧪 Beta Testing:</strong> Sign up to be among the first to test our technology
 			</div>
 			<div class="option-item">
-				<strong>Name Suggestions:</strong> Help us name our revolutionary app
+				<strong>✏️ Name Suggestions:</strong> Help us name our revolutionary app
 			</div>
 		</div>
 		
@@ -265,6 +281,24 @@ import { SITE_TITLE, SITE_DESCRIPTION, COMPANY_TAGLINE, COMPANY_DESCRIPTION } fr
 		background-color: rgba(var(--gray-light), 0.4);
 		padding: 1rem 1.5rem;
 		border-radius: 6px;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.option-item:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	}
+
+	.option-item.investment-highlight {
+		background: linear-gradient(135deg, rgba(58, 92, 201, 0.1), rgba(86, 207, 225, 0.1));
+		border: 2px solid var(--primary);
+		padding: 1.25rem 1.5rem;
+		box-shadow: 0 4px 16px rgba(58, 92, 201, 0.15);
+	}
+
+	.option-item.investment-highlight:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 24px rgba(58, 92, 201, 0.25);
 	}
 	
 	.cta-buttons {

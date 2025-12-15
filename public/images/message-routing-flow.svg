@@ -1,0 +1,149 @@
+<svg width="900" height="600" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="600" fill="#F5F7FA"/>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#0F172A">
+    Message Routing Through Mesh Network
+  </text>
+
+  <!-- Connection paths (subtle) -->
+  <line x1="100" y1="300" x2="250" y2="200" stroke="#CBD5E1" stroke-width="2" opacity="0.3"/>
+  <line x1="100" y1="300" x2="250" y2="400" stroke="#CBD5E1" stroke-width="2" opacity="0.3"/>
+  <line x1="250" y1="200" x2="450" y2="200" stroke="#CBD5E1" stroke-width="2" opacity="0.3"/>
+  <line x1="250" y1="400" x2="450" y2="400" stroke="#CBD5E1" stroke-width="2" opacity="0.3"/>
+  <line x1="450" y1="200" x2="650" y2="200" stroke="#CBD5E1" stroke-width="2" opacity="0.3"/>
+  <line x1="450" y1="400" x2="650" y2="400" stroke="#CBD5E1" stroke-width="2" opacity="0.3"/>
+  <line x1="650" y1="200" x2="800" y2="300" stroke="#CBD5E1" stroke-width="2" opacity="0.3"/>
+  <line x1="650" y1="400" x2="800" y2="300" stroke="#CBD5E1" stroke-width="2" opacity="0.3"/>
+  <line x1="250" y1="200" x2="450" y2="400" stroke="#CBD5E1" stroke-width="2" opacity="0.3"/>
+  <line x1="450" y1="200" x2="650" y2="400" stroke="#CBD5E1" stroke-width="2" opacity="0.3"/>
+
+  <!-- Optimal path highlighted -->
+  <line x1="100" y1="300" x2="250" y2="200" stroke="#10B981" stroke-width="4" opacity="0.8"/>
+  <line x1="250" y1="200" x2="450" y2="200" stroke="#10B981" stroke-width="4" opacity="0.8"/>
+  <line x1="450" y1="200" x2="650" y2="200" stroke="#10B981" stroke-width="4" opacity="0.8"/>
+  <line x1="650" y1="200" x2="800" y2="300" stroke="#10B981" stroke-width="4" opacity="0.8"/>
+
+  <!-- Message icon animation points -->
+  <circle cx="100" cy="300" r="8" fill="#10B981" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="250" cy="200" r="8" fill="#10B981" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+
+  <circle cx="450" cy="200" r="8" fill="#10B981" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+
+  <circle cx="650" cy="200" r="8" fill="#10B981" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+
+  <!-- Sender Device (left) -->
+  <g id="sender">
+    <circle cx="100" cy="300" r="35" fill="#3A5CC9" stroke="#2541B2" stroke-width="3"/>
+    <path d="M100 290 L95 305 L105 305 Z" fill="white"/>
+    <text x="100" y="360" text-anchor="middle" font-size="14" font-weight="bold" fill="#3A5CC9">
+      Sender
+    </text>
+    <text x="100" y="378" text-anchor="middle" font-size="12" fill="#64748B">
+      Alice
+    </text>
+  </g>
+
+  <!-- Relay devices -->
+  <g id="relay1">
+    <circle cx="250" cy="200" r="28" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M250 195 L247 203 L253 203 Z" fill="#3A5CC9"/>
+    <text x="250" y="245" text-anchor="middle" font-size="12" fill="#64748B">
+      Relay 1
+    </text>
+  </g>
+
+  <g id="relay2">
+    <circle cx="250" cy="400" r="28" fill="white" stroke="#CBD5E1" stroke-width="2"/>
+    <path d="M250 395 L247 403 L253 403 Z" fill="#CBD5E1"/>
+    <text x="250" y="445" text-anchor="middle" font-size="12" fill="#CBD5E1">
+      Relay (inactive)
+    </text>
+  </g>
+
+  <g id="relay3">
+    <circle cx="450" cy="200" r="28" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M450 195 L447 203 L453 203 Z" fill="#3A5CC9"/>
+    <text x="450" y="245" text-anchor="middle" font-size="12" fill="#64748B">
+      Relay 2
+    </text>
+  </g>
+
+  <g id="relay4">
+    <circle cx="450" cy="400" r="28" fill="white" stroke="#CBD5E1" stroke-width="2"/>
+    <path d="M450 395 L447 403 L453 403 Z" fill="#CBD5E1"/>
+    <text x="450" y="445" text-anchor="middle" font-size="12" fill="#CBD5E1">
+      Relay (inactive)
+    </text>
+  </g>
+
+  <g id="relay5">
+    <circle cx="650" cy="200" r="28" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M650 195 L647 203 L653 203 Z" fill="#3A5CC9"/>
+    <text x="650" y="245" text-anchor="middle" font-size="12" fill="#64748B">
+      Relay 3
+    </text>
+  </g>
+
+  <g id="relay6">
+    <circle cx="650" cy="400" r="28" fill="white" stroke="#CBD5E1" stroke-width="2"/>
+    <path d="M650 395 L647 403 L653 403 Z" fill="#CBD5E1"/>
+    <text x="650" y="445" text-anchor="middle" font-size="12" fill="#CBD5E1">
+      Relay (inactive)
+    </text>
+  </g>
+
+  <!-- Receiver Device (right) -->
+  <g id="receiver">
+    <circle cx="800" cy="300" r="35" fill="#10B981" stroke="#059669" stroke-width="3"/>
+    <path d="M800 290 L795 305 L805 305 Z" fill="white"/>
+    <text x="800" y="360" text-anchor="middle" font-size="14" font-weight="bold" fill="#10B981">
+      Receiver
+    </text>
+    <text x="800" y="378" text-anchor="middle" font-size="12" fill="#64748B">
+      Bob
+    </text>
+  </g>
+
+  <!-- Info box -->
+  <g id="info">
+    <rect x="200" y="480" width="500" height="100" rx="8" fill="white" stroke="#3A5CC9" stroke-width="2"/>
+    <text x="450" y="510" text-anchor="middle" font-size="16" font-weight="bold" fill="#3A5CC9">
+      Intelligent Routing
+    </text>
+    <text x="450" y="535" text-anchor="middle" font-size="13" fill="#64748B">
+      The network automatically finds the best path based on:
+    </text>
+    <text x="450" y="555" text-anchor="middle" font-size="12" fill="#64748B">
+      Signal strength • Battery levels • Network congestion • Message priority
+    </text>
+  </g>
+
+  <!-- Arrow indicators -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#10B981"/>
+    </marker>
+  </defs>
+
+  <!-- Direction arrows on optimal path -->
+  <path d="M 175 250 L 185 245" stroke="#10B981" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 350 200 L 360 200" stroke="#10B981" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 550 200 L 560 200" stroke="#10B981" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 725 250 L 735 255" stroke="#10B981" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- Step labels -->
+  <text x="450" y="100" text-anchor="middle" font-size="13" fill="#10B981" font-weight="bold">
+    Message flow: Alice → Relay 1 → Relay 2 → Relay 3 → Bob
+  </text>
+</svg>
