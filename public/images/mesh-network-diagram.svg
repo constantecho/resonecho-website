@@ -1,0 +1,119 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F5F7FA"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#0F172A">
+    Mesh Network Architecture
+  </text>
+
+  <!-- Connection lines (drawn first so they appear behind nodes) -->
+  <line x1="200" y1="150" x2="350" y2="200" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+  <line x1="200" y1="150" x2="150" y2="300" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+  <line x1="200" y1="150" x2="400" y2="300" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+
+  <line x1="400" y1="150" x2="350" y2="200" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="150" x2="550" y2="200" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="150" x2="400" y2="300" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+
+  <line x1="600" y1="150" x2="550" y2="200" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+  <line x1="600" y1="150" x2="650" y2="300" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+  <line x1="600" y1="150" x2="400" y2="300" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+
+  <line x1="150" y1="300" x2="350" y2="200" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+  <line x1="150" y1="300" x2="200" y2="450" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+  <line x1="150" y1="300" x2="400" y2="300" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+
+  <line x1="350" y1="200" x2="400" y2="300" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+  <line x1="350" y1="200" x2="550" y2="200" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+
+  <line x1="550" y1="200" x2="650" y2="300" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+  <line x1="550" y1="200" x2="400" y2="300" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+
+  <line x1="400" y1="300" x2="650" y2="300" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="300" x2="400" y2="450" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+
+  <line x1="650" y1="300" x2="600" y2="450" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+  <line x1="650" y1="300" x2="400" y2="450" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+
+  <line x1="200" y1="450" x2="400" y2="450" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="450" x2="600" y2="450" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+
+  <!-- Device nodes (smartphones) -->
+  <!-- Top row -->
+  <g id="device1">
+    <circle cx="200" cy="150" r="25" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M200 145 L197 155 L203 155 Z" fill="#3A5CC9"/>
+    <text x="200" y="185" text-anchor="middle" font-size="12" fill="#64748B">Device A</text>
+  </g>
+
+  <g id="device2">
+    <circle cx="400" cy="150" r="25" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M400 145 L397 155 L403 155 Z" fill="#3A5CC9"/>
+    <text x="400" y="185" text-anchor="middle" font-size="12" fill="#64748B">Device B</text>
+  </g>
+
+  <g id="device3">
+    <circle cx="600" cy="150" r="25" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M600 145 L597 155 L603 155 Z" fill="#3A5CC9"/>
+    <text x="600" y="185" text-anchor="middle" font-size="12" fill="#3A5CC9">Device C</text>
+  </g>
+
+  <!-- Middle row -->
+  <g id="device4">
+    <circle cx="150" cy="300" r="25" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M150 295 L147 305 L153 305 Z" fill="#3A5CC9"/>
+    <text x="150" y="335" text-anchor="middle" font-size="12" fill="#64748B">Device D</text>
+  </g>
+
+  <g id="device5">
+    <circle cx="350" cy="200" r="25" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M350 195 L347 205 L353 205 Z" fill="#3A5CC9"/>
+  </g>
+
+  <g id="device6">
+    <circle cx="400" cy="300" r="25" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M400 295 L397 305 L403 305 Z" fill="#3A5CC9"/>
+    <text x="400" y="335" text-anchor="middle" font-size="12" fill="#64748B">Device E</text>
+  </g>
+
+  <g id="device7">
+    <circle cx="550" cy="200" r="25" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M550 195 L547 205 L553 205 Z" fill="#3A5CC9"/>
+  </g>
+
+  <g id="device8">
+    <circle cx="650" cy="300" r="25" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M650 295 L647 305 L653 305 Z" fill="#3A5CC9"/>
+    <text x="650" y="335" text-anchor="middle" font-size="12" fill="#64748B">Device F</text>
+  </g>
+
+  <!-- Bottom row -->
+  <g id="device9">
+    <circle cx="200" cy="450" r="25" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M200 445 L197 455 L203 455 Z" fill="#3A5CC9"/>
+    <text x="200" y="485" text-anchor="middle" font-size="12" fill="#64748B">Device G</text>
+  </g>
+
+  <g id="device10">
+    <circle cx="400" cy="450" r="25" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M400 445 L397 455 L403 455 Z" fill="#3A5CC9"/>
+    <text x="400" y="485" text-anchor="middle" font-size="12" fill="#64748B">Device H</text>
+  </g>
+
+  <g id="device11">
+    <circle cx="600" cy="450" r="25" fill="white" stroke="#3A5CC9" stroke-width="3"/>
+    <path d="M600 445 L597 455 L603 455 Z" fill="#3A5CC9"/>
+    <text x="600" y="485" text-anchor="middle" font-size="12" fill="#64748B">Device I</text>
+  </g>
+
+  <!-- Legend -->
+  <g id="legend">
+    <text x="50" y="540" font-size="14" fill="#64748B">Devices communicate peer-to-peer</text>
+    <text x="50" y="560" font-size="14" fill="#64748B">Messages hop from device to device</text>
+    <text x="50" y="580" font-size="14" fill="#64748B">No central infrastructure required</text>
+
+    <line x1="300" y1="535" x2="340" y2="535" stroke="#3A5CC9" stroke-width="2" opacity="0.3"/>
+    <text x="350" y="540" font-size="14" fill="#64748B">= Connection Path</text>
+  </g>
+</svg>
